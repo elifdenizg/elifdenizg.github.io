@@ -1,0 +1,219 @@
+/*Font*/
+
+@font-face {
+    font-family: 'TT Drugs' ;
+    src: url(tt_drugs/TT\ Drugs\ Trial\ Regular.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'TT Drugs' ;
+    src: url(tt_drugs/TT\ Drugs\ Trial\ Bold.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'TT Drugs' ;
+    src: url(tt_drugs/TT\ Drugs\ Trial\ Light.otf);
+    font-weight: lighter;
+}
+
+*{font-family: 'TT Drugs';}
+
+
+/* Les class */
+
+.flex{
+display: flex;
+flex-direction: column;
+}
+
+
+/*Les cercles*/
+
+
+
+
+.circle {
+    border-radius: 50%;
+    color: #FCE2BF;
+    text-align: center;
+    background: #6b4d38;
+    position: relative;
+    overflow: hidden; /*ça cache les choses qui cortent du cadre*/
+    transition: all 0.3s ease;
+    cursor: pointer; /*clickable*/
+
+}
+
+.circle-front {
+    opacity: 1;
+    color: #FCE2BF;
+}
+
+.circle-back {
+    opacity: 0;
+    background: #5977BF;
+    color: white;
+    border-radius: 50%;
+}
+
+.circle:hover .circle-front {
+    opacity: 0;
+}
+
+.circle:hover .circle-back {
+    opacity: 1;
+}
+
+.circle-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+
+.circle_display{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    gap: 20px;
+}
+
+/*Les Tags*/
+
+header{
+    align-content: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+nav{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+body{
+    background-color: #FCE2BF;
+}
+
+main{margin: 0 10vw;}
+
+header{
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+h2{
+    color:#6b4d38;
+    text-align: center;
+}
+
+/* les links */
+a:link,
+:visited {
+    color: #6b4d38;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5977bf;
+    text-decoration: none;
+}
+
+a:active {
+    color: #1d1e1d;
+    text-decoration: none;
+}
+
+
+
+
+@media only screen and (max-width: 768px){
+    h1{font-size: 5vw;}
+    h2{font-size: 18px;}
+
+    nav{
+        font-size: 15px;
+        margin-bottom: 2vw;
+    }
+
+    .circle{
+        width: 100px;
+        height: 100px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .circle i{
+        line-height: 100px;
+        font-size: 50px;
+    }
+
+    .circle small{
+        font-size: 10px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    h1{font-size: 4vw;}
+    h2{font-size: 30px;}
+
+    nav{
+        font-size: 25px;
+        margin-bottom: 2vw;
+    }
+
+    .circle{
+        width: 150px;
+        height: 150px;
+        font-size: 25px;
+    }
+
+    .circle i{
+        line-height: 150px;
+        font-size: 100px;
+    }
+
+    .circle small{
+        font-size: 20px;
+        margin: 0%;
+    }
+    
+
+}
+
+@media only screen and (min-width: 1024px){
+    h1{font-size: 3vw;}
+    h2{font-size: 35px;}
+
+    nav{
+        font-size: 30px;
+        margin-bottom: 2vw;
+    }
+
+    .circle{
+        width: 200px;
+        height: 200px;
+        font-size: 30px;
+    }
+
+    .circle i{
+        line-height: 200px;
+        font-size: 150px;
+    }
+
+    .circle small{
+        font-size: 25px;
+    }
+    
+}

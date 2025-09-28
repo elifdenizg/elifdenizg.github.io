@@ -1,0 +1,150 @@
+/*Font*/
+
+@font-face {
+    font-family: 'TT Drugs' ;
+    src: url(tt_drugs/TT\ Drugs\ Trial\ Regular.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'TT Drugs' ;
+    src: url(tt_drugs/TT\ Drugs\ Trial\ Bold.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'TT Drugs' ;
+    src: url(tt_drugs/TT\ Drugs\ Trial\ Light.otf);
+    font-weight: lighter;
+}
+
+*{font-family: 'TT Drugs';}
+
+/* Les class */
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    margin:auto;
+    font-weight: bold;
+    font-size: 4svw;
+}
+
+
+/*Les Tags*/
+
+header{
+    align-content: center;
+    justify-content: center;
+}
+
+body{
+    background-color: #5977bf ;
+    text-align: center;
+    color: white;
+}
+
+main{
+    color:#1d1e1d;
+}
+
+nav{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+img{border-radius: 50%;}
+
+a:link ,
+:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFD6D8;
+    text-decoration: none;
+}
+
+a:active {
+    color: #1d1e1d;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px){
+    h1{font-size: 5vw;}
+
+    nav{
+        font-size: 15px;
+        margin-bottom: 2vw;
+    }
+    
+    main{
+        font-size: 15px;
+        margin: 3vw;
+        width: auto;
+        max-width: 350px;
+        text-align: center;
+    }
+
+
+    img{
+    width: 100px;
+    height: 100px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    h1{font-size: 4vw;}
+
+    nav{
+        font-size: 25px;
+        margin-bottom: 2vw;
+    }
+
+    main{
+        font-size: 25px;
+        margin: 3vw;
+        width: auto;
+        text-align: center;
+        max-width: 650px;
+    }
+
+    img{
+    width: 300px;
+    height: 300px;
+    } 
+}
+
+@media only screen and (min-width: 1024px){
+    h1{font-size: 3vw;}
+
+    nav{
+        font-size: 30px;
+        margin-bottom: 2vw;
+    }
+    
+    main{
+        display: flex;
+        justify-content: center;
+        text-align: right;
+        font-size: 30px;
+        margin: 1vw;
+        width: auto;
+        p{max-width: 650px;}
+    }
+
+    img{
+        margin: 1vw;
+        width: 500px;
+        height: 500px;
+    } 
+
+}

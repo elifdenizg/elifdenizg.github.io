@@ -1,0 +1,168 @@
+/*Font*/
+
+@font-face {
+    font-family: 'TT Drugs' ;
+    src: url(tt_drugs/TT\ Drugs\ Trial\ Regular.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'TT Drugs' ;
+    src: url(tt_drugs/TT\ Drugs\ Trial\ Bold.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'TT Drugs' ;
+    src: url(tt_drugs/TT\ Drugs\ Trial\ Light.otf);
+    font-weight: lighter;
+}
+
+*{font-family: 'TT Drugs';}
+
+
+/* Les class */
+
+.flex{
+display: flex;
+flex-direction: column;
+}
+
+
+/*Les Tags*/
+
+header{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+nav{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+body{
+    background-color: #DEEFEA;
+}
+
+main{
+    margin: 0 auto;
+    max-width: 80vw;
+}
+
+header{
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+/* les links */
+a:link,
+:visited {
+    color: #1d1e1d;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #6b4d38;
+    text-decoration: none;
+}
+
+a:active {
+    color: #5977bf;
+    text-decoration: none;
+}
+
+h2{color: #1d1e1d;}
+
+@media only screen and (max-width: 768px){
+    h1{font-size: 5vw;}
+
+    nav{
+        font-size: 15px;
+        margin-bottom: 2vw;
+    }
+
+    h2{
+        text-align: left;
+        font-size: 16px;
+        margin-bottom: 0%;
+    }
+    
+    h3{
+        text-align: left;
+        font-size: 12px;
+        color: #5977bf;
+        margin-top: 0%;
+    }
+    
+    dd{
+        margin-left: 5vw;
+        font-size: 15px;
+        margin-top: 0%;
+    }
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    h1{font-size: 4vw;}
+
+    nav{
+        font-size: 25px;
+        margin-bottom: 2vw;
+    }
+
+    h2{
+        text-align: left;
+        font-size: 27px;
+        margin-bottom: 0%;
+    }
+    
+    h3{
+        text-align: left;
+        font-size: 20px;
+        color: #5977bf;
+        margin-top: 0%;
+    }
+    
+    dd{
+        margin-left: 5vw;
+        font-size: 25px;
+        margin-top: 0%;
+    }
+
+}
+
+@media only screen and (min-width: 1024px){
+    h1{font-size: 3vw;}
+
+    nav{
+        font-size: 30px;
+        margin-bottom: 2vw;
+    }
+
+    h2{
+        text-align: left;
+        font-size: 32px;
+        margin-bottom: 0%;
+    }
+    
+    h3{
+        text-align: left;
+        font-size: 27px;
+        color: #5977bf;
+        margin-top: 0%;
+    }
+    
+    dd{
+        margin-left: 5vw;
+        font-size: 30px;
+        margin-top: 0%;
+    }
+
+}

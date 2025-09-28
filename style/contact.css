@@ -1,0 +1,171 @@
+/*Font*/
+
+@font-face {
+    font-family: 'TT Drugs' ;
+    src: url(tt_drugs/TT\ Drugs\ Trial\ Regular.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'TT Drugs' ;
+    src: url(tt_drugs/TT\ Drugs\ Trial\ Bold.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'TT Drugs' ;
+    src: url(tt_drugs/TT\ Drugs\ Trial\ Light.otf);
+    font-weight: lighter;
+}
+
+*{font-family: 'TT Drugs';}
+
+
+/* Les class */
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*Les Tags*/
+
+header{
+    align-content: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+nav{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 2vw;
+}
+
+body{
+    display: flex;
+    background-color: #FFD6D8;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+} 
+
+
+header{
+    text-align: center;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+/* La mise en page de form*/
+
+form {
+    gap: 10px;
+    color: #6b4d38;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* les links */
+a:link,
+:visited {
+    color: #6b4d38;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5977BF;
+    text-decoration: none;
+}
+
+a:active {
+    color: #1d1e1d;
+    text-decoration: none;
+}
+
+label{font-weight: bold;}
+
+
+input,textarea {
+    padding: 5px;
+    border: 1px solid #6b4d38;
+    border-radius: 5px;
+}
+
+
+
+@media only screen and (max-width: 768px){
+    h1{font-size: 5vw;}
+
+    nav{
+        font-size: 15px;
+        margin-bottom: 2vw;
+    }
+
+    form{font-size: 15px;}
+
+    input , textarea{font-size: 15px;}
+
+    footer{
+        font-size: 40px;
+        gap: 30px;
+        margin-top: 40px;
+    }    
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    h1{font-size: 4vw;}
+
+    nav{
+        font-size: 25px;
+        margin-bottom: 2vw;
+    }
+    
+    form{font-size: 17px;}
+    
+    input , textarea{
+        font-size: 17px;
+        max-width: 50vw;
+    }
+        
+    footer{
+        font-size: 50px;
+        gap: 25px;
+        margin-top: 40px;
+    }
+    
+}
+
+@media only screen and (min-width: 1024px){
+    h1{font-size: 3vw;}
+    
+    nav{
+        font-size: 30px;
+        margin-bottom: 2vw;
+    }
+    
+    input, textarea{
+        font-size: 20px;
+        max-width: 50vw;
+    }
+        
+    form{
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+
+    footer{
+        font-size: 70px;
+        gap: 30px;
+        margin-top: 40px;
+    }
+}
